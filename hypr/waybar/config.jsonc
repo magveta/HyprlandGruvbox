@@ -1,0 +1,98 @@
+{
+
+  "layer": "top",
+  "position": "top", 
+  "height": 32,
+  
+  "modules-left":   ["hyprland/workspaces", "wlr/taskbar"],
+  "modules-center": ["custom/spotify"],
+  "modules-right":  ["tray", "pulseaudio", "clock#date", "clock#time", "custom/power"],
+
+  "wlr/taskbar": {
+	"format": "{icon}",
+	"icon-size": 15,
+	"icon-theme": "Papirus",
+	"tooltip-format": "{title}",
+	"on-click": "activate",
+	"on-click-middle": "close",
+  "on-click-right": "minimize-raise",
+	"ignore-list": [
+	    "Alacritty"
+	],
+	"app_ids-mapping": {
+	}
+  },
+
+  "hyprland/workspaces": {
+    // "disable-scroll": true,
+    "sort-by-number": true,
+    "all-outputs": true,
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "format": "{icon}",
+    "format-icons": {
+      "1": "<span color=\"#EBDBB2\">1</span>",
+      "2": "<span color=\"#EBDBB2\">2</span>",
+      "3": "<span color=\"#EBDBB2\">3</span>",
+      "4": "<span color=\"#EBDBB2\">4</span>",
+      "5": "<span color=\"#EBDBB2\">5</span>",
+      "6": "<span color=\"#EBDBB2\">6</span>",
+      "7": "<span color=\"#EBDBB2\">7</span>",
+      "8": "<span color=\"#EBDBB2\">8</span>",
+      "9": "<span color=\"#EBDBB2\">󰣇</span>",
+      "urgent": "",
+      "focused": "",
+      "default": ""
+    }
+  },
+
+  "tray": {
+    "icon-size": 14,
+    "spacing": 10
+  },
+
+  "clock#time": {
+    "interval": 1,
+    "format": " {:%H:%M} ",
+    "tooltip": false
+  },
+
+  "clock#date": {
+    "interval": 10,
+    "format": " {:%e %b %y}", // icon: calendar-alt
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " muted",
+    "scroll-step": 5,
+    "on-click": "pactl set-sink-mute 0 toggle",
+    "on-click-middle": "pavucontrol",
+    "on-click-right": "~/.config/hypr/scripts/pactl_toggle.sh",
+    "format-icons": {
+      "headphone": "  ",
+      "hands-free": "  ",
+      "headset": "  ",
+      "phone": "  ",
+      "portable": "  ",
+      "car": "  ",
+      "default": ["", "", ""]
+    }
+  },
+
+  "custom/power": {
+    "format": " ⏻ ",
+    "on-click": "~/.config/hypr/scripts/rofi-power"
+  },
+
+  "custom/spotify": {
+    "exec": "~/.config/hypr/scripts/mediaplayer.py --player spotify",
+    "format": "{}  ",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
+ }
+}
