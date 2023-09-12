@@ -86,13 +86,4 @@
     "format": " ⏻ ",
     "on-click": "~/.config/hypr/scripts/rofi-power"
   },
-
-  "custom/spotify": {
-    "exec": "~/.config/hypr/scripts/mediaplayer.py --player spotify",
-    "format": "{}  ",
-    "return-type": "json",
-    "on-click": "playerctl play-pause",
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous"
- }
 }
