@@ -11,7 +11,7 @@ Others:
 
 `sudo pacman -S alacritty slurp grim xdg-desktop-portal-wlr swayidle swaylock wl-clipboard ncmpcpp pavucontrol`
 
-`yay -S hyprpaper-git waybar-hyprland mpdris2 rofi-lbonn-wayland`
+`yay -S hyprpaper-git hyprshot waybar-hyprland mpdris2 rofi-lbonn-wayland`
 
 
 ## Instructions:
