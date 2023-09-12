@@ -15,7 +15,7 @@ Others:
 
 
 ## Instructions:
-Add the files to your .config folder, except for `bash.rc`, wich should be put in your /home/ folder.
+Add the files to your .config folder, except for `.bashrc`, wich should be put in your /home/ folder.
 
 You will probably have to make some customizations yourself, so don't be scared to try and tweak numbers around.
 
