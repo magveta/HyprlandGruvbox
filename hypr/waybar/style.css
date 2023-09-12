@@ -54,7 +54,6 @@ tooltip {
 #clock,
 #pulseaudio,
 #workspaces,
-#custom-spotify,
 #tray {
   background: #32302f;
   padding: 0 0.6em;
@@ -87,13 +86,6 @@ tooltip {
 #clock {
   color: #ebdbb2;
   margin-right: 6px;
-}
-
-#custom-spotify {
-    padding: 0 10px;
-    margin: 0 4px;
-    background-color: #1DB954;
-    color: #000000;
 }
 
 #taskbar {
