@@ -9,9 +9,9 @@ GTK Theme: https://www.gnome-look.org/p/1681313/
 
 Others:
 
-`sudo pacman -S alacritty slurp grim xdg-desktop-portal-wlr swayidle swaylock wl-clipboard ncmpcpp pavucontrol`
+`sudo pacman -S alacritty adobe-source-code-pro-fonts neofetch slurp grim xdg-desktop-portal-wlr swayidle swaylock wl-clipboard ncmpcpp pavucontrol`
 
-`yay -S hyprpaper-git hyprshot waybar-hyprland mpdris2 rofi-lbonn-wayland`
+`yay -S hyprpaper-git ttf-sourcecodepro-nerd hyprshot waybar-hyprland mpdris2 rofi-lbonn-wayland`
 
 
 ## Instructions:
