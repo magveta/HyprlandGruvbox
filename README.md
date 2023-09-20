@@ -20,8 +20,8 @@ Add the files to your .config folder, except for `.bashrc`, wich should be put i
 You will probably have to make some customizations yourself, so don't be scared to try and tweak numbers around.
 
 ## Screenshots: 
+![image](https://github.com/magveta/MyHyprland/assets/127806458/eeac1673-1dfc-495c-bff6-fffe08d05c8f)
 
-![2023-09-13-214740_hyprshot](https://github.com/magveta/MyHyprland/assets/127806458/dc29f943-e07b-49b3-a6e9-590fdcd84f1c)
+![image](https://github.com/magveta/MyHyprland/assets/127806458/32a244af-ae9b-4868-a6f9-d2690f306ff8)
 
 
-![2023-09-13-214802_hyprshot](https://github.com/magveta/MyHyprland/assets/127806458/053cf23e-ee3d-4301-bf03-f9f325c05308)
