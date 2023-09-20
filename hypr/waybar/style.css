@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-  background: #1d2021;
+  background: rgba(29, 32, 33, 1.0);
   color: #ebdbb2;
 }
 
@@ -49,10 +49,12 @@ tooltip {
   color: #ebdbb2;
 }
 
+#custom-weather,
 #custom-power,
 #date,
 #clock,
 #pulseaudio,
+#custom-weather
 #workspaces,
 #tray {
   background: #32302f;
@@ -116,4 +118,8 @@ tooltip {
   border-radius: 6px;
   background: #4e635b;
   color: #ebdbb2;
+}
+
+#custom-weather {
+  margin-right: 6px;
 }

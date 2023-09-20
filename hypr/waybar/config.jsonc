@@ -5,8 +5,8 @@
   "height": 32,
   
   "modules-left":   ["hyprland/workspaces", "wlr/taskbar"],
-  "modules-center": ["custom/spotify"],
-  "modules-right":  ["tray", "pulseaudio", "clock#date", "clock#time", "custom/power"],
+  "modules-center": [],
+  "modules-right":  ["tray", "custom/weather", "pulseaudio", "clock#date", "clock#time", "custom/power"],
 
   "wlr/taskbar": {
 	"format": "{icon}",
@@ -54,13 +54,13 @@
 
   "clock#time": {
     "interval": 1,
-    "format": " {:%H:%M} ",
+    "format": "  {:%H:%M} ",
     "tooltip": false
   },
 
   "clock#date": {
     "interval": 10,
-    "format": " {:%e %b %y}", // icon: calendar-alt
+    "format": "  {:%e %b %y}", // icon: calendar-alt
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
 
@@ -86,4 +86,12 @@
     "format": " ⏻ ",
     "on-click": "~/.config/hypr/scripts/rofi-power"
   },
+
+  "custom/weather": {
+    "exec": "python ~/.config/hypr/scripts/weather.py",
+    "restart-interval": 300,
+    "return-type": "json",
+    "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/$(location_id)"
+    // "format-alt": "{alt}",
+  }
 }
