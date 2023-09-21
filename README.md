@@ -15,9 +15,11 @@ Others:
 
 
 ## Instructions:
-Add the files to your .config folder, except for `.bashrc`, wich should be put in your /home/ folder.
+Add the files to your .config folder, except for `.bashrc`, wich should be put in your /home/folder.
 
 You will probably have to make some customizations yourself, so don't be scared to try and tweak numbers around.
+
+Do not forget to edit the weather.py file to make sure it shows the weather in your area.
 
 ## Screenshots: 
 ![image](https://github.com/magveta/MyHyprland/assets/127806458/eeac1673-1dfc-495c-bff6-fffe08d05c8f)
