@@ -54,13 +54,13 @@
 
   "clock#time": {
     "interval": 1,
-    "format": "  {:%H:%M} ",
+    "format": "{:%H:%M} ",
     "tooltip": false
   },
 
   "clock#date": {
     "interval": 10,
-    "format": "  {:%e %b %y}", // icon: calendar-alt
+    "format": "{:%e %b %y}", // icon: calendar-alt
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
 
